@@ -6,20 +6,24 @@
 	<meta charset="UTF-8">
 	<style>
 		input{
-			width: 330px;
+			width: 300px;
 			height: 23px;
+		}
+		span{
+			color: red;
+			font-size: 17px;
 		}
 	</style>
 </head>
 
 <body>
-    <fieldset style="width:330px;">
+    <fieldset style="width:340px;">
 		<legend style="color: red;">学生档案</legend>
         <form id="testform" method="get" action="#S" style="line-height:180%;">
-            姓名:</br> <input type="text" name="name1" required placeholder="请输入姓名" autofocus="autofocus" /></br>
-            学号:</br> <input type="text" name="number1" required placeholder="请输入学号"  /></br>
-            手机号码:</br> <input type="text" name="iphonenumber1" required placeholder="请输入手机号"  /></br>
-            邮箱地址:</br> <input type="text" name="email1" required placeholder="请输入邮箱地址"  /></br>
+            姓名:</br> <input type="text" name="name1" required placeholder="请输入姓名" autofocus="autofocus" /><span>&nbsp;*</span></br>
+            学号:</br> <input type="text" name="number1" required placeholder="请输入学号"  /><span>&nbsp;*</span></br>
+            手机号码:</br> <input type="tel" name="iphonenumber1" required placeholder="请输入手机号"  /><span>&nbsp;*</span></br>
+            邮箱地址:</br> <input type="text" name="email1" required placeholder="请输入邮箱地址"  /><span>&nbsp;*</span></br>
             录取学校:</br> <input type="search" name="school1" list="schools"  /></br>
             入学成绩:</br> <input type="text" name="score1"   /></br>
             入学时间:</br> <input type="date" name="date1"   /></br></br>
