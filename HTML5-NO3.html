@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>网页换肤</title>
+    <meta charset="UTF-8">
+    <style>
+    </style>
+</head>
+
+<body>
+    <fieldset style="width:600px;height:175px;">
+        <legend style="color: red;font-size: 40px;">网页换肤</legend>
+        <form method="get" action="#S">
+            <div style="width: 600px; height: 40px; border: 2px solid #ccc; ">
+                <div style="float: left; width: 20px;height: 20px; background-color: gray;margin-top:8px;margin-left: 5px;"
+                    id="gray"></div>
+                <div style="float: left; width: 20px;height: 20px; background-color: purple;margin-top:8px;margin-left: 5px;"
+                    id="purple"></div>
+                <div style="float: left; width: 20px;height: 20px; background-color: pink;margin-top:8px;margin-left: 5px;"
+                    id="pink"></div>
+                <div style="float: left; width: 20px;height: 20px; background-color: skyblue;margin-top:8px;margin-left: 5px;"
+                    id="skyblue"></div>
+                <div style="float: left; width: 20px;height: 20px; background-color: yellow;margin-top:8px;margin-left: 5px;"
+                    id="yellow"></div>
+                <div style="float: left; width: 20px;height: 20px; background-color: green;margin-top:8px;margin-left: 5px;"
+                    id="green"></div>
+            </div>
+            <div style="width: 550px; height: 50px;background-color: gray;  margin-left: 25px;margin-top: 20px; "
+                id="backg">
+                <p style="margin-top: 0px;">LocalStorage将数据保存在客户端本地的硬件设备中，即使浏览器被关闭了，该数据仍然存在，下次打开浏览器访问网站时仍然可以继续使用。</p>
+            </div>
+
+        </form>
+    </fieldset>
+</body>
+<script>
+
+
+    var gray = document.getElementById('gray');
+    var purple = document.getElementById('purple');
+    var pink = document.getElementById('pink');
+    var skyblue = document.getElementById('skyblue');
+    var yellow = document.getElementById('yellow');
+    var green = document.getElementById('green');
+    var div = document.getElementsByTagName('div');
+
+
+
+    window.onload = function () {
+        document.getElementById('backg').style.backgroundColor = localStorage.getItem("backgroundColor");
+        for (var i = 1; i < div.length - 1; i++) {
+
+            if (div[i].id == localStorage.getItem("backgroundColor")) {
+                div[i].style.marginTop = "4px";
+            }
+        }
+    }
+
+    if (localStorage.pagecount) {
+        localStorage.pagecount = Number(localStorage.pagecount) + 1;
+    } else {
+        localStorage.pagecount = 1;
+        div[7].style.backgroundColor = "gray";
+        localStorage.setItem("backgroundColor", "gray");
+    }
+
+    gray.onclick = function () {
+        var backc = document.getElementById('backg');
+        gray.style.marginTop = 4 + "px";
+        purple.style.marginTop = 8 + "px";
+        pink.style.marginTop = 8 + "px";
+        yellow.style.marginTop = 8 + "px";
+        skyblue.style.marginTop = 8 + "px";
+        green.style.marginTop = 8 + "px";
+        backc.style.backgroundColor = "gray";
+        localStorage.setItem("backgroundColor", "gray");
+    }
+
+    purple.onclick = function () {
+        var backc = document.getElementById('backg');
+        purple.style.marginTop = 4 + "px";
+        pink.style.marginTop = 8 + "px";
+        gray.style.marginTop = 8 + "px";
+        yellow.style.marginTop = 8 + "px";
+        skyblue.style.marginTop = 8 + "px";
+        green.style.marginTop = 8 + "px";
+        backc.style.backgroundColor = "purple";
+        localStorage.setItem("backgroundColor", "purple");
+    }
+    pink.onclick = function () {
+        var backc = document.getElementById('backg');
+        pink.style.marginTop = 4 + "px";
+        purple.style.marginTop = 8 + "px";
+        gray.style.marginTop = 8 + "px";
+        yellow.style.marginTop = 8 + "px";
+        skyblue.style.marginTop = 8 + "px";
+        green.style.marginTop = 8 + "px";
+        backc.style.backgroundColor = "pink";
+        localStorage.setItem("backgroundColor", "pink");
+    }
+    skyblue.onclick = function () {
+        var backc = document.getElementById('backg');
+        skyblue.style.marginTop = 4 + "px";
+        purple.style.marginTop = 8 + "px";
+        pink.style.marginTop = 8 + "px";
+        yellow.style.marginTop = 8 + "px";
+        gray.style.marginTop = 8 + "px";
+        green.style.marginTop = 8 + "px";
+        backc.style.backgroundColor = "skyblue";
+        localStorage.setItem("backgroundColor", "skyblue");
+    }
+    yellow.onclick = function () {
+        var backc = document.getElementById('backg');
+        yellow.style.marginTop = 4 + "px";
+        purple.style.marginTop = 8 + "px";
+        pink.style.marginTop = 8 + "px";
+        gray.style.marginTop = 8 + "px";
+        skyblue.style.marginTop = 8 + "px";
+        green.style.marginTop = 8 + "px";
+        backc.style.backgroundColor = "yellow";
+        localStorage.setItem("backgroundColor", "yellow");
+    }
+    green.onclick = function () {
+        var backc = document.getElementById('backg');
+        green.style.marginTop = 4 + "px";
+        purple.style.marginTop = 8 + "px";
+        pink.style.marginTop = 8 + "px";
+        yellow.style.marginTop = 8 + "px";
+        skyblue.style.marginTop = 8 + "px";
+        gray.style.marginTop = 8 + "px";
+        backc.style.backgroundColor = "green";
+        localStorage.setItem("backgroundColor", "green");
+    }
+
+</script>
+
+</html>
