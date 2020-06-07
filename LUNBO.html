@@ -136,17 +136,17 @@
         if (index > count.length - 1) {
             index = 0;
         }
-        $('img').eq(index).fadeIn(000).siblings('img').fadeOut(000); //图片淡入淡出
+        $('img').eq(index).fadeIn(000).siblings('img').fadeOut(000);
         $('ul>li').eq(index).addClass('active').siblings('li').removeClass('active'); //相邻li取消白点
 
     }
-    $('ul>li').mouseover(function () {  //鼠标移动到li上图片跟着动
+    $('ul>li').mouseover(function () { 
         index = $(this).index();
         $('img').eq(index).show().siblings('img').hide();
         $('ul>li').eq(index).addClass('active').siblings('li').removeClass('active');
     })
 
-    $('.next').mousedown(function () { //点击右箭头
+    $('.next').mousedown(function () {
         index++;
         if (index == count.length) {
             index = 0;
@@ -154,7 +154,7 @@
         $('img').eq(index).show().siblings('img').hide();
         $('ul>li').eq(index).addClass('active').siblings('li').removeClass('active');
     })
-    $('.pre').mousedown(function () { //点击左箭头
+    $('.pre').mousedown(function () { 
         index--;
         if (index == -1) {
             index = count.length - 1;
