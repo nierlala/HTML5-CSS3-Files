@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>轮播图</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            padding: 50px;
+        }
+
+        .carousel {
+            width: 590px;
+            height: 470px;
+
+            position: relative;
+            overflow: hidden;
+
+        }
+
+        .carousel img {
+            width: 590px;
+            height: 470px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            display: none;
+
+        }
+
+        .carousel img:first-child {
+            display: block;
+        }
+
+        .pre,.next {
+            position: absolute;
+            top: 45%;
+            width: 28px;
+            height: 40px;
+            line-height: 35px;
+            text-align: center;
+            font-size: 20px;
+            color: white;
+            cursor: pointer;
+            background-color: rgba(125, 125, 125, 0.5);
+        }
+
+        .pre {
+            border-top-right-radius: 25px;
+            border-bottom-right-radius: 25px;
+        }
+
+        .pre:hover {
+            background-position: 0 0;
+        }
+
+        .next {
+            border-top-left-radius: 25px;
+            border-bottom-left-radius: 25px;
+            right: 0;
+        }
+
+        .next:hover {
+            background-position: -41px 0;
+        }
+
+        ul {
+            width: 250px;
+            position: absolute;
+            bottom: 20px;
+            left: 150px;
+            transform: translate(-50%);
+        }
+
+        ul li {
+            width: 12px;
+            height: 12px;
+            background: rgba(180, 173, 173, 0.8);
+            border-radius: 50%;
+            float: left;
+            margin-left: 6px;
+            list-style-type: none;
+        }
+
+        ul li:hover {
+            background: rgba(255, 255, 255, .8);
+        }
+
+        ul li:first-child {
+            margin: 0;
+        }
+
+        .active {
+            background: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="carousel">
+        <div class="images">
+            <img src=" 1.jpg" alt="">
+            <img src=" 2.jpg" alt="">
+            <img src=" 3.jpg" alt="">
+            <img src=" 4.jpg" alt="">
+            <img src=" 5.jpg" alt="">
+            <img src=" 6.jpg" alt="">
+            <img src=" 7.jpg" alt="">
+            <img src=" 8.jpg" alt="">
+        </div>
+        <div id="pre" class="pre"><</div>
+        <div id="next" class="next">></div>
+        <ul>
+        </ul>
+     </div>
+
+</body>
+<script src="js/jquery.js"></script>
+<script>
+    var img = $('img');
+    for (var j = 0; j < img.length; j++) {
+        $('ul').append('<li></li>')
+    }
+    $('li').eq(0).addClass('active');
+    var index = 0;
+    var timer = setInterval(remove, 2000);
+    var count = $('img')
+    function remove() {
+        index++;
+        if (index > count.length - 1) {
+            index = 0;
+        }
+        $('img').eq(index).fadeIn(000).siblings('img').fadeOut(000); //图片淡入淡出
+        $('ul>li').eq(index).addClass('active').siblings('li').removeClass('active'); //相邻li取消白点
+
+    }
+    $('ul>li').mouseover(function () {  //鼠标移动到li上图片跟着动
+        index = $(this).index();
+        $('img').eq(index).show().siblings('img').hide();
+        $('ul>li').eq(index).addClass('active').siblings('li').removeClass('active');
+    })
+
+    $('.next').mousedown(function () { //点击右箭头
+        index++;
+        if (index == count.length) {
+            index = 0;
+        }
+        $('img').eq(index).show().siblings('img').hide();
+        $('ul>li').eq(index).addClass('active').siblings('li').removeClass('active');
+    })
+    $('.pre').mousedown(function () { //点击左箭头
+        index--;
+        if (index == -1) {
+            index = count.length - 1;
+        }
+        $('img').eq(index).show().siblings('img').hide();
+        $('ul>li').eq(index).addClass('active').siblings('li').removeClass('active');
+    })
+
+</script>
+
+</html>
