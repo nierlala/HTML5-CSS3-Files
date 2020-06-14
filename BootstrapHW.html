@@ -1,0 +1,1222 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Boot------</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <style>
+        @media screen and (min-width:750px) {
+            body{
+                background-image: url(back.png);
+            }
+            .smallb {
+                height: 45px;
+                width: 100%;
+                background-color: black;
+
+            }
+
+            .container {
+                width: 100%;
+
+                margin: 0 0 0 0;
+                padding: 0 0 0 0;
+            }
+
+            .navbar {
+                height: 80px;
+                width: 100%;
+            }
+
+            .tell {
+                float: left;
+                margin-left:75%;
+                margin-top: 10px;
+            }
+
+            .hm {
+                font-size: 23px;
+                float: left;
+                color: white;
+                margin-left: 15px;
+                margin-top: 6px;
+
+            }
+
+            .dl {
+                font-size: 18px;
+                float: left;
+                color: white;
+                padding-left: 40px;
+                margin-top: 10px;
+
+            }
+
+            .navbar-brand>img {
+                margin-top: 0px;
+                margin-left: 90%;
+            }
+
+            .navbar-default .navbar-nav>li>a {
+                font-size: 30px;
+                top: 17px;
+                left: 240px;
+                margin-left: 120px;
+            }
+            .ksdz{
+                display: none;
+            }
+            .navbar-default .navbar-nav>li>a:hover{
+                color: #f57018;
+                border-bottom: 4px solid #f57018;
+            }
+            .banner{
+                position: relative;
+                width: 100%;
+                margin-top: -21px;
+            }
+            .so{
+                position: absolute;
+                margin-top: -145px;
+                margin-left: 620px;
+                border: 7px solid rgba(0,0,0,0.5);
+                border-radius: 15px;
+            }
+            #leftso{
+                border-top-left-radius: 8px;
+                border-bottom-left-radius: 8px;
+                float: left;
+                width: 180px;
+                height: 60px;
+                border: 0;
+                background-color: #c5bcbc;
+            }
+            #rightso{
+                font-size: 28px;
+                color: #918d8d;
+                float: left;
+                width: 400px;
+                height: 60px;
+                border: 0;
+                background-color: #eceaea;
+            }
+            #buttso{
+                border-top-right-radius: 8px;
+                border-bottom-right-radius: 8px;
+                float: left;
+                width: 180px;
+                height: 60px;
+                border: 0;
+                background-color: #f57018;
+            }
+            #leftsoimg{
+                float: left;
+                width: 33px;
+                margin-left: 35px;
+                margin-top: 10px;
+            }
+            #leftsop{
+                color: #706d6d;
+                float: right;
+                font-size: 26px;
+                margin-top: 14px;
+                margin-right: 16px;
+            }
+            #buttsoimg{
+                width: 45px;
+                margin-left: 67px;
+                margin-top: 8px;
+            }
+            .wenzia{
+                display: block;
+                color: white;
+                position: absolute;
+                margin-top: -505px;
+                margin-left: 250px;
+            }
+            #wenzia1{
+                font-size: 66px;
+                font-weight: lighter;
+            }
+            #wenzia2{
+                width: 470px;
+                margin-top: 25px;
+                border-top: 1px solid #cccccc;
+            }
+            #wenzia3{
+                width: 580px;
+                border-bottom: 1px solid #cccccc;
+            }
+            #wenzia21{
+                font-size: 29px;
+                padding-top: 17px;
+            }
+            #wenzia31{
+                font-size: 29px;
+                padding-top: 5px;
+                padding-bottom: 8px;
+            }
+            #wenzia4{
+                display: none;
+            }
+            .jiesong{
+                width: 90%;
+                margin-left: 5%;
+                margin-right: 5%;
+                margin-top: 45px;
+                border-radius: 6px;
+                height: 580px;
+
+                
+            }
+            #jiesonga{
+                width: 80%;
+                float: left;
+                height:100%;
+             }
+            
+            .wenzib{
+                display: block;
+                color: white;
+                position: absolute;
+                margin-top: 25px;
+                margin-left: 750px;
+            }
+            #wenzib1{
+                font-size: 56px;
+                font-weight: lighter;
+            }
+            #wenzib2{
+                font-size: 30px;
+                font-weight: lighter;
+            }
+            #jiesongc{
+                float: left;
+                width: 20%;
+                height: 100%;
+
+                background-color: #161672; 
+             }
+            #jiesongcimg{
+                margin-left: 30%;
+                margin-top: 37%;
+                width: 150px;
+            }
+            #jiesongcp{
+                color: white;
+                font-size: 36px;
+                margin-left: 30%;
+                margin-top: 10%;
+            }
+            #jiesongcbutt{
+                border: 1px solid white;
+                background-color: #161672;
+                color: white;
+                font-size:36px ;
+                border-radius: 15px;
+                width: 260px;
+                height: 80px;
+                margin-top: 20%;
+                margin-left: 12%;
+                margin-bottom: 15%;
+            } 
+            #carH{
+                display: none;
+            }
+            .rmlx{
+                margin-top: 33px;
+                margin-left: 40%;
+                color: black;
+            }
+            #rmlx1{
+                font-size: 56px;
+                font-weight: 480;
+            }
+            #rmlx2{
+                font-size: 26px;
+                font-weight:bold;
+                margin-left: 27px;
+                margin-top: -10px;
+            }
+            .ABCDE{
+                width: 90%;
+                margin-left: 5%;
+                margin-right: 5%;
+                margin-top: 55px;
+                height: 1740px;
+                color: white;
+      
+            }
+            .AA{
+                color: white;
+                width: 46.3%;
+                height: 889px;
+                position: absolute;
+                background-color: black;
+            }
+            .BB{
+                width: 51.3%;
+                height: 48%;
+                top: 1px;
+                position: relative;
+                top: 52%;
+                background-color: black;
+            }
+            .CC{
+                width: 48%;
+                height: 33.3%;
+                float: left;
+                position: relative;
+                left: 52%;
+                top: -48%;
+                background-color: rgb(29, 221, 235);
+            }
+            .DD{
+                width: 48%;
+                height: 32.3%;
+                float: left;
+                position: relative;
+                left: 4%;
+                top: -14%;
+                background-color: rgb(29, 221, 235);
+            }
+            .EE{
+                width: 48%;
+                height: 33%;
+                float: left;
+                position: relative;
+                left: 4%;
+                top: -13.3%;
+                background-color: rgb(29, 221, 235);
+            }
+            #AAp1{
+                font-size: 32px;
+                margin-top: 28px;
+                margin-left: 55px;
+            }
+            #AAp2{
+                float: left;
+                font-size: 30px;
+                margin-top: 10px;
+                margin-left: 60px;
+            }
+            #AAp3{
+                float: left;
+                font-size: 52px;
+                margin-top: -10px;
+                margin-left: 0px;
+            }
+            #AAp4{
+                float: left;
+                font-size: 32px;
+                margin-top: 8px;
+                margin-left: 5px;
+            }
+            .CCbott{
+                position: relative;
+                width: 100%;
+                height: 165px;
+                background-color: rgba(0, 0, 0, 0.5);
+                margin-top: -165px;
+            }
+            #CCp1{
+                font-size: 31px;
+                padding-top: 26px;
+                margin-left: 55px;
+            }
+            #CCp2{
+                float: left;
+                font-size: 30px;
+                margin-top: 10px;
+                margin-left: 60px;
+            }
+            #CCp3{
+                float: left;
+                font-size: 52px;
+                margin-top: -10px;
+                margin-left: 0px;
+            }
+            #CCp4{
+                float: left;
+                font-size: 32px;
+                margin-top: 8px;
+                margin-left: 5px;
+            }
+            #rmlx0{
+                display: none;
+            }
+            .AApn,.ABCDEnn{
+                display: none;
+            }
+            #ckgd{
+                display: none;
+            }
+            .part2{
+                width: 90%;
+                margin-left: 5%;
+                margin-right: 5%;
+                height: 2450px;
+                /* background-color: salmon; */
+            }
+            .smyyj{
+                position: relative;
+                width: 600px;
+                height: 300px;
+                margin-left: 40%;
+                margin-top: -300px;
+            }
+            
+          #smyyj1{
+              position: relative;
+              height: 10px;
+              font-size: 56px;
+              top: -150px;
+              left: 11%;
+          }
+          #smyyj2{
+              position: relative;
+              font-size: 26px;
+              font-weight: bold;
+              top: -50px;
+              left: 5%;
+          }
+          .OPQR{
+              height: 1900px;
+              background-color: skyblue;
+              margin-top: 250px;
+          }
+          #OO{
+              width: 42%;
+              height: 27%;
+              background-color: springgreen;
+              float: left;
+          }
+          #PP{
+              height: 27%;
+              background-color: rgba(6, 14, 65, 0.6);
+          }
+          #QQ{
+              width: 100%;
+              height: 38%;
+              background-color: tomato;
+          }
+          #RR{
+            width: 100%;
+              height: 35%;
+              background-color: rgba(46, 64, 105, 0.9);
+          }
+          #PP1{
+              color: white;
+              padding-top: 80px;
+              font-size: 43px;
+              margin-left: 60%;
+          }
+          #PP2{
+              color: white;
+              font-size: 26px;
+              margin-top: 40px;
+              margin-left: 47%;
+              line-height: 55px;
+          }
+          #RR1{
+              height: 100%;
+              width: 30%;
+              margin-left: 5%;
+              float: left;
+
+             
+          }
+          #RR2{
+              height: 100%;
+              width: 30%;
+              float: left;
+   
+            
+          }
+          #RR3{
+              height: 100%;
+              width: 30%;
+              float: left;
+
+          }
+          #RR11{
+              position: relative;
+              width: 300px;
+              margin-top: 100px;
+              margin-left: 20%;
+          }
+          #RR12{
+              position: relative;
+              width: 100px;
+              left: -200px;
+              top: 20px;
+          }
+          #RR13{
+            position: relative;
+            color: white;
+            font-size: 34px;
+            top: -110px;
+            left: 180px;
+          }
+          #RR14{
+              position: relative;
+              color: white;
+              font-size: 26px;
+              left: 20px;
+          }
+          #RR24{
+            position: relative;
+              color: white;
+              font-size: 26px;
+              left: 100px;
+          }
+          #RR34{
+            position: relative;
+              color: white;
+              font-size: 26px;
+              left: 75px;
+          }
+          #smyyj0,#smyyj11,#PP11,#RR0,#RR4,#RR5,#RR6,#X1,#X2,#X3{
+              display: none;
+          }
+          .bottomXYZ{
+              width: 100%;
+              height: 800px;
+              background-color: black;
+                color: white;
+          }
+          #Y1{
+              height: 160px;
+              width: 90%;
+              margin-left: 5%;
+              padding-top: 110px;
+              
+          }
+          #Y11{
+            font-size: 29px;
+              float: left;
+          }
+          #Y12{
+              width: 150px;
+              margin-left: 30px;
+          }
+          #Y13{
+              width: 150px;
+              margin-left: 18px;
+          }
+          #Y14{
+              width: 150px;
+              margin-left: 18px;
+          }
+          #Y15{
+              width: 150px;
+              height: 57px;
+              margin-left: 18px;
+          }
+          #Y16{
+              width: 90px;
+              position: relative;
+            left: 10%;
+              top: 35%;
+          }
+          #Y17{
+            width: 110px;
+            position: relative;
+            left: 20%;
+              top: -60%;
+          }
+          #Y18{
+            width: 90px;
+            position: relative;
+            left: 30%;
+              top: -72px;
+          }
+          #Y19{
+            width: 130px;
+            position: relative;
+            left: 39%;
+              top: -120px;
+          }
+          #Y2{
+              height: 160px;
+              width: 90%;
+              margin-left: 5%;
+              padding-top: 110px;
+              
+          }
+          #Y21{
+            font-size: 29px;
+              float: left;
+          }
+          #Y22{
+              margin-left: 140px;
+          }
+          #Y3{
+              height: 160px;
+              width: 90%;
+              margin-left: 5%;
+              padding-top: 60px;
+              
+          }
+          #Y31{
+            font-size: 29px;
+              float: left;
+          }
+          #Y32{
+              margin-left: 140px;
+              margin-top: 5px;
+          }
+          #Y4{
+              height: 130px;
+              width: 90%;
+              margin-left: 5%;
+              margin-top: -20px;
+              /* background-color: violet; */
+              border-bottom: 0.5px solid #838282;
+              
+          }
+          #Y41{
+            font-size: 29px;
+              float: left;
+          }
+          #Y42{
+              margin-left: 140px;
+          }
+          #Y51{
+              margin-top: 70px;
+              margin-left: 37%;
+          }
+
+
+
+
+
+
+
+
+
+        }
+
+        @media screen and (max-width:749px) {
+            body{
+                background-color: #e9e7e7;
+            }
+            .container {
+                width: 100%;
+
+                margin: 0 0 0 0;
+                padding: 0 0 0 0;
+            }
+
+            .navbar {
+                height: 100px;
+                width: 100%;
+            }
+            .navbar-default .navbar-nav>li>a{
+                font-size: 26px;
+                color: white;
+                background-color: rgba(125,125,125,0.8);
+            }
+            .navbar-default .navbar-nav>li>a:hover{
+                color: orange;
+            }
+
+            .tell,
+            .hm,
+            .dl {
+                display: none;
+            }
+            .navbar-brand>img{
+                height: 60px;
+                margin-top: 12px;
+                margin-left: 15%;
+            }
+            .carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img{
+                height: 300px;
+            }
+            .navbar-header{
+                background-color: white;
+            }
+            .navbar-toggle{
+                border: 0px ;
+                width: 80px;
+                height: 100px;
+                margin-top: px;
+            }
+            .navbar-toggle{
+                margin-right: 15px;
+                
+            }
+            .navbar-toggle .icon-bar{
+                width: 50px;
+                height: 4px;
+            }
+            .navbar-toggle .icon-bar+.icon-bar{
+                margin-top: 17px;
+            }
+            .navbar-default .navbar-toggle .icon-bar{
+                background-color: black;
+            }
+            .ksdz{
+                width: 140px;
+                height: 45px;
+                margin-top: 36px;
+                margin-left: 130px;
+                background-color: #f57018;
+                border: 0;
+                border-radius: 5px;
+                color: white;
+                font-size: 20px;
+            }
+            #wenzia2,#wenzia3{
+                display: none;
+            }
+            .wenzia{
+                display: block;
+                color: white;
+                position: absolute;
+                margin-top: -265px;
+                margin-left: 40px;
+            }
+            #wenzia1{
+                font-size: 32px;
+                font-weight: lighter;
+            }
+            #wenzia4{
+                font-size: 22px;
+                font-weight: lighter;
+            }
+            .so{
+                position: absolute;
+                margin-top: -100px;
+                margin-left: 40px;
+                border: 3px solid rgba(0,0,0,0.5);
+                border-radius: 5px;
+            }
+            #leftso{
+                border-top-left-radius: 5px;
+                border-bottom-left-radius: 5px;
+                float: left;
+                width: 120px;
+                height: 45px;
+                border: 0;
+                background-color: #ece6e6;
+            }
+            #rightso{
+                font-size: 18px;
+                color: #918d8d;
+                float: left;
+                width: 325px;
+                height: 45px;
+                border: 0;
+                background-color: #fffcfc;
+            }
+            #buttso{
+                border-top-right-radius: 5px;
+                border-bottom-right-radius: 5px;
+                float: left;
+                width: 120px;
+                height: 45px;
+                border: 0;
+                background-color: #f57018;
+            }
+            #leftsoimg{
+                float: left;
+                width: 20px;
+                margin-left: 20px;
+                margin-top: 10px;
+            }
+            #leftsop{
+                color: #706d6d;
+                float: right;
+                font-size: 18px;
+                margin-top: 11px;
+                margin-right: 12px;
+            }
+            #buttsoimg{
+                width: 35px;
+                margin-left: 37px;
+                margin-top: 5px;
+            }
+            .jiesong{
+                width: 100%;
+                margin-top: 15px;
+                height: 170px;
+                background-color: white;
+
+                
+            }
+            #jiesongcimg,#jiesonga,#jiesongcp{
+                display: none;
+            }
+            #carH{
+                float: left;
+                margin-top: 30px;
+                margin-left: 22px;
+            }
+            .wenzib{
+                display: block;
+                position: absolute;
+                margin-top: 21px;
+                margin-left: 130px;
+            }
+            #wenzib1{
+                font-size: 31px;
+                color: #4e6288;
+            }
+            #wenzib2{
+                margin-top: 20px;
+                font-size: 19px;
+                color: #817b7b;
+                line-height: 16px;
+            }
+            #jiesongcbutt{
+                display: block;
+                position: absolute;
+                margin-top: 55px;
+                margin-left: 473px;
+                width: 135px;
+                height: 44px;
+                font-size: 22px;
+                color: #7c7575;
+                background-color: white;
+                border: 1px solid #969292;
+                border-radius: 8px;
+            }
+            .CC,.DD,.EE{
+                display: none;
+            }
+            #rmlx1,#rmlx2{
+                display: none;
+            }
+            .ABCDE{
+                width: 100%;
+                background-color: white;
+                margin-top: 20px;
+
+            }
+            .ABCDEnn{
+                width: 90%;
+                margin-left: 5%;
+                margin-right: 5%;
+                padding-top: 27px;
+                border-bottom: 1px solid #cccccc;
+            }
+            #ABCDE00{
+                color: rgb(255, 81, 0);
+                font-size: 36px;
+                float: left;
+                font-weight: bold;
+
+            }
+            #ABCDE01{
+                font-size: 33px;
+                margin-top: 5px;
+            }
+            .AA{
+                position: relative;
+                width: 90%;
+                height: 390px;
+                margin-left: 5%;
+                margin-right: 5%;
+                margin-top: 17px;
+
+            }
+            #AAimg{
+                height: 100%;
+            }
+            
+            
+            #AAp1,#AAp2,#AAp3,#AAp4{
+                display: none;
+            }
+            .BB{
+                width: 90%;
+                margin-left: 5%;
+                margin-right: 5%;
+                margin-top: 17px;
+            }
+            .AApn{
+                position: absolute;
+                height: 100px;
+                width: 90%;
+                margin-left: 5%;
+                margin-top: -100px;
+                color: white;
+                background-color: rgba(0, 0, 0, 0.7);
+            }
+            #AApn1{
+                font-size: 24px;
+                margin-top: 20px;
+                margin-left: 20px;
+                float: left;
+            }
+            #AApn2{
+                float: left;
+                font-size: 22px;
+                margin-top: 50px;
+                margin-left: 100px;
+            }
+            #AApn3{
+                float: left;
+                font-size: 38px;
+                margin-top: 32px;
+                margin-left: 5px;
+            }
+             #AApn4{
+                float: left;
+                font-size: 22px;
+                margin-top: 45px;
+            }
+            #ckgd{
+                width: 170px;
+                height: 35px;
+                background-color: white;
+                border-radius: 8px;
+                color: #817c7c;
+                font-size: 22px;
+                border: 1px solid #afadad;
+                margin-left: 35% ;
+                margin-top: 38px;
+                margin-bottom: 25px;
+            }
+            #PP1,#RR1,#RR2,#RR3{
+                display: none;
+            }
+            .part2{
+                margin-top: 20px;
+                height: 1700px;
+                background-color: white;
+            }
+            .smyyj{
+                width: 90%;height: 85px;
+                border-bottom: 1px solid #cccccc;
+                /* background-color: rgb(245, 209, 209); */
+                margin-left: 5%;
+            }
+            #smyyj0{
+                float: left;
+                font-size: 34px;
+                margin-top: 25px;
+                color: rgb(255, 102, 0);
+            }
+            #smyyj1{
+                float: left;
+                font-size: 30px;
+                margin-top: 30px;
+                margin-left: 8px;
+            }
+            #smyyj11{
+                float: left;
+                font-size: 27px;
+                margin-top: 33px;
+                margin-left: 3px;
+            }
+            #smyyj2{
+                float: left;
+                font-size: 23px;
+                margin-top: 38px;
+                margin-left: 13px;
+                margin-bottom: 40px;
+            }
+            #OO{
+                width: 90%;
+                height: 350px;
+                margin-left: 5%;
+                padding-top: 40px;
+            }
+            #PP11{
+                font-size: 30px;
+                margin-top: 40px;
+                margin-left: 33%;
+            }
+            #PP2{
+                font-size: 16px;
+                margin-left: 10%;
+                margin-top: 15px;
+                line-height: 25px;
+                font-weight: bold;
+            }
+            #QQ{
+                width: 90%;
+                height: 350px;
+                margin-left: 5%;
+                padding-top: 40px;
+            }
+            #RR0{
+                font-size: 30px;
+                margin-top: 40px;
+                margin-left: 33%;
+            }
+            #RR4{
+                width: 90%;
+                margin-left: 5%;
+                height: 190px;
+                border-bottom: 1px solid #cccccc;
+
+            }
+            #RR5{
+                width: 90%;
+                margin-left: 5%;
+                height: 190px;
+                /* background-color: rgb(51, 255, 0); */
+                border-bottom: 1px solid #cccccc;
+            }
+            #RR6{
+                width: 90%;
+                margin-left: 5%;
+                height: 180px;
+                /* background-color: rgb(47, 0, 255); */
+                border-bottom: 1px solid #cccccc;
+                margin-bottom: 50px;
+            }
+            #RR41{
+                width: 100px;
+                margin-top: 10%;
+                margin-left: 12%;
+                float: left;
+            }
+            #RR42{
+                font-size: 17px;
+                padding-top: 10%;
+                margin-left: 43%;
+                font-weight: 550;
+                line-height: 29px;
+            }
+            #RR51{
+                width: 80px;
+                margin-top: 9%;
+                margin-left: 14%;
+                float: left;
+            }
+            #RR52{
+                font-size: 17px;
+                padding-top: 12%;
+                margin-left: 43%;
+                font-weight: 550;
+                line-height: 29px;
+            }
+            #RR61{
+                width: 70px;
+                margin-top: 9%;
+                margin-left: 14%;
+                float: left;
+            }
+            #RR62{
+                font-size: 17px;
+                padding-top: 13%;
+                margin-left: 43%;
+                font-weight: 550;
+                line-height: 29px;
+            }
+            .bottomXYZ{
+               width: 100%;
+               height: 270px;
+               background-color: #10101ad7; 
+               color: white;
+               font-size: 20px;
+            }
+            #X1{
+               padding-top: 12%;
+               margin-left: 35%;
+            }
+            #X2{
+                margin-left: 19%;
+            }
+            #X3{
+                margin-left: 35%;
+            }
+            #Y1,#Y2,#Y3,#Y4,#Y5{
+                display: none;
+            }
+
+
+
+
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="smallb">
+        <div class="tell">
+            <img src="tell.png" alt="phone">
+        </div>
+        <div class="hm">
+            400-808-8682
+        </div>
+        <div class="dl">
+            <p>请登录&nbsp;&nbsp;&nbsp;&nbsp;| &nbsp;&nbsp;&nbsp;注册</p>
+        </div>
+    </div>
+    
+    <div class="container">
+        <nav class="navbar navbar-default ">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#col-1">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                <a class="navbar-brand"><img src="logo.png"></a>
+                <button class="ksdz">快速定制</button>
+            </div>
+            <div class="collapse navbar-collapse" id="col-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="#">首页</a></li>
+                    <li><a href="#">热门路线</a></li>
+                    <li><a href="#">签证推荐</a></li>
+                    <li><a href="#">使命愿景</a></li>
+                </ul>
+
+            </div>
+            
+        </nav>
+        <div class="banner">
+            <img src="banner.jpg" class="img-responsive" width="100%" >
+            <div class="wenzia">
+                <p id="wenzia1">悠然古欧洲&nbsp;&nbsp;&nbsp;遍览德法瑞意</p>
+                <div id="wenzia2">
+                    <p id="wenzia21">巴黎卢浮宫、塞纳河游船、凡尔赛宫</p>
+                </div>
+                <div id="wenzia3">
+                    <p id="wenzia31">少女峰、大运河游船、金色列车、西庸城堡</p>
+                </div>
+                <div id="wenzia4">
+                    <p id="wenzia41">全程升级热早+1晚5星酒店</p>
+                </div>
+            </div>
+            <div class="so">
+                <div id="leftso"><img src="position.png" id="leftsoimg"><p id="leftsop">目的地</p></div><input type="text" id="rightso" value="&nbsp;&nbsp;|&nbsp;&nbsp;日本&nbsp;&nbsp;&nbsp;美国&nbsp;&nbsp;&nbsp;英国&nbsp;&nbsp;&nbsp;地中海"><div id="buttso" href="#"><img src="search.png" id="buttsoimg"></div>
+            </div>
+        </div>
+        <div class="jiesong">
+            <img src="carH.png" id="carH">
+            <img id="jiesonga" src="Sbanner2.jpg"  width="80%" height="100%">
+            <div class="wenzib">
+                <p id="wenzib1">机场接送&nbsp;&nbsp;&nbsp;省钱省心</p>
+                <div id="wenzib2">
+                    <p id="wenzib21">提供上海、苏州、无锡各市</p>
+                    <p id="wenzib31">往返机场、码头接送服务、更有包车服务</p>
+                </div>
+            </div>
+            <div id="jiesongc">
+                <img src="car.png" id="jiesongcimg">
+                <p id="jiesongcp">车辆接送</p>
+                <button id="jiesongcbutt">查看详情</button>
+            </div>
+        </div>
+        <div class="rmlx">
+            <p id="rmlx1">热&nbsp; 门&nbsp; 线&nbsp; 路</p>
+            <p id="rmlx2">Popular tourist routes</p>
+        </div>
+        <div class="ABCDE">
+            <div class="ABCDEnn">
+                <p id="ABCDE00">|</p>
+                <p id="ABCDE01">&nbsp;热门线路</p>
+            </div>
+        
+            <div class="AA">
+                <img id="AAimg" src="hot1.jpg"  width="100%" height="80%">
+                
+                    <p id="AAp1">海南三亚5天4晚，纯玩。4晚红树林度假王国</p>
+                    <p id="AAp2">¥</p><p id="AAp3">2580</p><p id="AAp4">&nbsp;/&nbsp;人起</p>
+               
+                
+            </div>
+            <div class="AApn">
+                <p id="AApn1">海南三亚5天4晚<br>纯玩、4晚红树林度假王国</p>
+                <p id="AApn2">¥ </p><p id="AApn3"> 2580</p><p id="AApn4">&nbsp;/&nbsp;人起</p>
+            </div>
+            <div class="BB">
+                <img id="BBimg" src="hot2.jpg"  width="100%" height="80%">
+                <p id="AAp1">德法意瑞欧洲4国，ABCD任意路线由您挑选</p>
+                <p id="AAp2">¥</p><p id="AAp3">7999</p><p id="AAp4">&nbsp;/&nbsp;人起</p>
+            </div>
+            <div class="AApn">
+                <p id="AApn1">德法意瑞欧洲4国<br>ABCD任意路线由您挑选</p>
+                <p id="AApn2">¥ </p><p id="AApn3"> 7999</p><p id="AApn4">&nbsp;/&nbsp;人起</p>
+            </div>
+            <div class="CC">
+                <img id="CCimg" src="hot3.jpg"  width="100%" height="100%">
+                <div class="CCbott">
+                    <p id="CCp1">曼谷+芭提雅 国际五星，赠送2220大礼包，绝无自费</p>
+                <p id="CCp2">¥</p><p id="CCp3">2799</p><p id="CCp4">&nbsp;/&nbsp;人起</p>
+                </div>
+            </div>
+            <div class="DD">
+                <img id="DDimg" src="hot4.jpg"  width="100%" height="100%">
+                <div class="CCbott">
+                    <p id="CCp1">日本本州游 樱花、寿司、温泉、美食</p>
+                <p id="CCp2">¥</p><p id="CCp3">5399</p><p id="CCp4">&nbsp;/&nbsp;人起</p>
+                </div>
+            </div>
+            <div class="EE">
+                <img id="EEimg" src="hot5.jpg"  width="100%" height="100%">
+                <div class="CCbott">
+                    <p id="CCp1">斯里兰卡7天6晚全景游 保证入住2晚香格里拉</p>
+                <p id="CCp2">¥</p><p id="CCp3">7999</p><p id="CCp4">&nbsp;/&nbsp;人起</p>
+                </div>
+            </div>
+            <button id="ckgd">查看更多&nbsp;&nbsp;></button>
+        </div>
+        <div class="part2">
+            <div class="smyyj">
+                <p id="smyyj0">|</p>
+                <p id="smyyj1">使命与愿景</p>
+                <p id="smyyj11">:</p>
+                <p id="smyyj2">让旅游回归本质，体验纯粹旅游</p>
+            </div>
+            <div class="OPQR">
+                <div id="OO">
+                    <img src="mission1.jpg" width="100%" height="100%">
+                </div>
+                <div id="PP">
+                    <p id="PP1">服务理念及优势</p>
+                    <p id="PP11">--服务理念--</p>
+                    <p id="PP2"> &nbsp;“&nbsp;英华逸游&nbsp;”&nbsp;&nbsp;通过重新打造旅游全程中的展品线路设计、出行交通方案、<br>陪游向导服务、增值关怀项目等，为客户提供高品质的旅游体验，英华逸<br>游在泰国、欧洲、等多个国家拥有丰富的旅游资源，同时致力于给用户提<br>供性价比高的产品和服务。</p>
+                </div>
+                <div id="QQ">
+                    <img src="mission2.jpg" width="100%" height="100%">
+                </div>
+                <div id="RR">
+                    <p id="RR0">--服务优势--</p>
+                    <div id="RR1"><img src="rorate.png" id="RR11"><img src="icon1.png" id="RR12"><p id="RR13">品质行程</p><p id="RR14">旅游达人精心设计、基于口碑反复打磨，<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;全网最好，敢于任何产品比</p></div>
+                    <div id="RR2"><img src="rorate.png" id="RR11"><img src="icon2.png" id="RR12"><p id="RR13">品质消费</p><p id="RR24">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;不堆自费，<br>不进垃圾购物站和伪景点</p></div>
+                    <div id="RR3"><img src="rorate.png" id="RR11"><img src="icon3.png" id="RR12"><p id="RR13">品质小团</p><p id="RR34">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;独立成团不敢拼，<br>只跟亲朋好友一起玩，每天发团</p></div>
+                    <div id="RR4"><img src="icon11.png" id="RR41"><p id="RR42">旅游达人精心设计、基于口碑反复打磨，<br>告别人山人海鸡肋景点。<br>全网最好，敢于任何产品比</p></div>
+                    <div id="RR5"><img src="icon22.png" id="RR51"><p id="RR52">不推自费，<br>不进垃圾购物店和伪景点</p></div>
+                    <div id="RR6"><img src="icon33.png" id="RR61"><p id="RR62">独立成团不散拼<br>只跟亲朋好友一起玩，每天发团</p></div>
+                </div>
+
+            </div>
+           
+        </div>
+        <div class="bottomXYZ">
+            <p id="X1">苏ICP备号、2020</p>
+            <p id="X2">@苏州英华国际旅游有限公司&nbsp;版权所有</p>
+            <p id="X3">技术支持&nbsp;杭州科技</p>
+            <div id="Y1"><p id="Y11">合作伙伴</p><img src="xiecheng.png" id="Y12"><img src="feizhu.png" id="Y13"><img src="quna.png" id="Y14"><img src="suzhou.png" id="Y15"><p id="Y16">携程网</p><p id="Y17">阿里飞猪</p><p id="Y18">去哪儿</p><p id="Y19">苏州旅游局</p></div>
+            <div id="Y2"><p id="Y21">热门位置</p><p id="Y22">韩国&nbsp;&nbsp;日本&nbsp;&nbsp;菲律宾&nbsp;&nbsp;越南&nbsp;&nbsp;老挝&nbsp;&nbsp;柬埔寨&nbsp;&nbsp;泰国&nbsp;&nbsp;马来西亚&nbsp;&nbsp;新加坡&nbsp;&nbsp;印度尼西亚&nbsp;&nbsp;印度&nbsp;&nbsp;斯里兰卡&nbsp;&nbsp;土耳其&nbsp;&nbsp;阿联酋&nbsp;&nbsp;西班牙&nbsp;&nbsp;意大利&nbsp;希腊&nbsp;法国&nbsp;&nbsp;比利时&nbsp;荷兰<br>
+                英国&nbsp;&nbsp;瑞士&nbsp;&nbsp;奥地利&nbsp;&nbsp;德国&nbsp;捷克&nbsp;&nbsp;匈牙利&nbsp;&nbsp;俄罗斯&nbsp;&nbsp;芬兰&nbsp;葡萄牙&nbsp;&nbsp;冰岛&nbsp;&nbsp;美国&nbsp;&nbsp;加拿大&nbsp;&nbsp;巴西&nbsp;&nbsp;阿根廷&nbsp;&nbsp;澳大利亚&nbsp;&nbsp;新西兰</p></div>
+            <div id="Y3"><p id="Y31">主题服务</p><p id="Y32">海岛度假&nbsp;&nbsp;历史文化&nbsp;&nbsp;探索冒险&nbsp;&nbsp;美食购物&nbsp;&nbsp;都市生活&nbsp;&nbsp;海外游学&nbsp;&nbsp;邮轮度假&nbsp;&nbsp;蜜月摄影&nbsp;&nbsp;亲子乐园</p></div>
+            <div id="Y4"><p id="Y41">友情链接</p><p id="Y42">马蜂窝&nbsp;穷游&nbsp;&nbsp;booking&nbsp;苏州旅游局&nbsp;&nbsp;驴友网&nbsp;&nbsp;吾爱全球签证中心&nbsp;&nbsp;酒店团购&nbsp;&nbsp;携程攻略&nbsp;&nbsp;天巡职航在线&nbsp;&nbsp;满天飞旅游网&nbsp;&nbsp;中国旅游网&nbsp;&nbsp;澳乐网&nbsp;&nbsp;背包旅游行程<br>
+                出境旅游&nbsp;&nbsp;国际酒店&nbsp;&nbsp;广州旅游社&nbsp;&nbsp;出境旅游&nbsp;&nbsp;517旅行&nbsp;&nbsp;花生游&nbsp;&nbsp;家园网&nbsp;&nbsp;海外婚礼</p></div>
+            <div id="Y5"><p id="Y51">2020&nbsp;&nbsp;@苏州英华国际旅游有限公司&nbsp;版权所有</p></div>
+        </div>
+
+
+
+
+
+    </div>
+    <script src="jquery.js"></script>
+    <script src="bootstrap.min.js"></script>
+</body>
+
+</html>
